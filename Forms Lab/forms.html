@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script>
+        function submitForm(event){
+            event.preventDefault(); // Prevent the form from submitting the usual way
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const car = document.getElementById('cars').value;
+
+            alert('Name: ' + name + '\nEmail: ' + email + '\nCar: ' + car);
+        }
+    </script>
+</head>
+<body>
+    <h1>Submit your information</h1>
+
+    <form onsubmit="submitForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        
+        <label for="name">Email:</label>
+        <input type="text" name="email" id="email" required><br><br>
+
+        <label for="cars">Choose a Car:</label>
+        <select name="cars" id="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="Porsche">Porsche</option>
+            <option value="BMW">BMW</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+        </select><br><br>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
