@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.moanimated-bird{
+    width: 150px;
+    position: absolute;
+    bottom: 300px;
+    left: 100px;
+    z-index: 1;
+}
+
+.moanimated-bird2{
+    width: 100px;
+    position: absolute;
+    bottom: 300px;
+    left: 500px;
+    z-index: 1;
+}
+
+.moanimated-butterfly{
+    width: 250px;
+    position: absolute;
+    bottom: 300px;
+    left: 1000px;
+    z-index: 1;
+}
+
+.moanimated-eagle{
+    width: 500px;
+    position: absolute;
+    bottom: 500px;
+    left: 1500px;
+    z-index: 1;
+}
+
+.moanimated-superman{
+    width: 200px;
+    position: absolute;
+    bottom: 300px;
+    left: 0px;
+    z-index: 1;
+}
+
+.flipped{
+    transform: scalex(-1);
+}
