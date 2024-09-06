@@ -1,3 +1,8 @@
+// Michael Santoro
+// Assignment 1
+// script.js
+// Implements moving animation for birds
+
 function getRandomPosition(){
     const x = Math.floor(Math.random() * (window.innerWidth - 100)); // Adjust for bird width
     const y = Math.floor(Math.random() * (window.innerHeight - 400)) + 100; // Adjust for bird height and bottom
