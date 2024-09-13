@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Picture</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .moanimated-bird {
+            width: 100px;
+            position: absolute;
+            bottom: 300px;
+            left: 0px;
+            z-index: 1;
+            transition: all 3s ease;
+        }
+
+        .flipped {
+            transform: scaleX(-1); /* Flip the image horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div>   
+        <img src="garden.jpg" alt="Garden" style="width:100%" />   
+      
+        <img src="butterfly.gif" alt="butterfly" style="width:100px; position: absolute; bottom: 300px; right: 300px; z-index: 1;" /> 
+        <img src="bird-1.gif" alt="bird-1" class="moanimated-bird" />       
+    </div> 
+
+    <script>
+        function getRandomPosition() {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100)); // Adjust for bird width
+            const y = Math.floor(Math.random() * (window.innerHeight - 400)) + 100; // Adjust for bird height and bottom
+            return { x, y };
+        }
+
+        function moveBird() {
+            const butterfly = document.querySelector('.moanimated-bird');
+            const currentX = parseInt(butterfly.style.left || 0, 10);
+            const { x, y } = getRandomPosition();
+
+            if (x > currentX) {
+                butterfly.classList.add('flipped');
+            } else {
+                butterfly.classList.remove('flipped');
+            }
+
+            butterfly.style.left = `${x}px`;
+            butterfly.style.bottom = `${y}px`;
+        }
+
+        function startAnimation() {
+            moveBird();
+            setInterval(() => {
+                moveBird();
+            }, 13000); // 3 seconds for movement + 10 seconds pause
+        }
+
+        window.onload = startAnimation;
+    </script>
+</body>
+</html>

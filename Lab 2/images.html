@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Picture</title>
+    <style>
+        @keyframes moveButterfly {
+            0% {
+                left: 0px;
+            }
+            50% {
+                left: calc(100% - 100px);
+            }
+            100% {
+                left: 0px;
+            }
+        }
+
+        .animated-butterfly {
+            width: 100px;
+            position: absolute;
+            bottom: 300px;
+            z-index: 1;
+            animation: moveButterfly 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>   
+        <img src="garden.jpg" alt="Garden" style="width:100%" />   
+      
+        <img src="butterfly.gif" alt="butterfly" style="width:100px; position: absolute; bottom: 300px; right: 300px; z-index: 1;" /> 
+        <img src="butterfly.gif" alt="butterfly" class="animated-butterfly" style="left: 0px;" />       
+    </div>   
+</body>
+</html>
