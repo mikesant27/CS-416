@@ -48,13 +48,7 @@
 }
 
 .right{
-<<<<<<< HEAD
-    float: inline-start;
-    width: 200px;
-    height: 210px;
-=======
     float: right;
->>>>>>> cd4f189a28cc8767f9ad6762c8abc6c9f311413a
     background-image: linear-gradient(to right,red,yellow);
     width: 12%;
     height: 200px;
@@ -74,10 +68,6 @@
     color: white;
 }
 
-<<<<<<< HEAD
-@media only screen and(max-width: 620px){
-
-=======
 @media (max-width: 1000px) {
     .menu, .right {
         width: 100%;
@@ -94,5 +84,4 @@
         margin: 10px auto;
         display: block;
     }
->>>>>>> cd4f189a28cc8767f9ad6762c8abc6c9f311413a
 }
