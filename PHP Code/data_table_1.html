@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <title>Mobile-Friendly Data Table</title>
+    <style>
+        table {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                position: relative;
+                padding-left: 50%;
+                white-space: pre-wrap;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 45%;
+                padding-left: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });
+    </script>
+</head>
+
+<body>
+    <center>
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Name">Tiger Nixon</td>
+                    <td data-label="Position">System Architect</td>
+                    <td data-label="Office">Edinburgh</td>
+                    <td data-label="Age">61</td>
+                    <td data-label="Start date">2011-04-25</td>
+                    <td data-label="Salary">$320,800</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Garrett Winters</td>
+                    <td data-label="Position">Accountant</td>
+                    <td data-label="Office">Tokyo</td>
+                    <td data-label="Age">63</td>
+                    <td data-label="Start date">2011-07-25</td>
+                    <td data-label="Salary">$170,750</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Ashton Cox</td>
+                    <td data-label="Position">Junior Technical Author</td>
+                    <td data-label="Office">San Francisco</td>
+                    <td data-label="Age">66</td>
+                    <td data-label="Start date">2009-01-12</td>
+                    <td data-label="Salary">$86,000</td>
+                </tr>
+                <!-- Additional rows go here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+
+</html>
