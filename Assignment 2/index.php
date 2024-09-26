@@ -18,17 +18,13 @@
             require "nav.php";
         ?>
 
-        <div class="col-6 col-s-9">
-            <?php
-                require "main.php";
-            ?>
-        </div>
+        <?php
+            require "main.php";
+        ?>
 
-        <div class="col-3 col-s-12">
-            <?php
-                require "aside.php";
-            ?>
-        </div>
+        <?php
+            require "aside.php";
+        ?>
     </div>
 
     <?php
