@@ -41,6 +41,8 @@ html {
 .menu a {
     color: white;
     text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 .menu li:hover {
