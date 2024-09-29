@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Prince-font';
+    font-family: 'Prince';
     src: url('Fonts/Prince.ttf') format('truetype');
 }
 
@@ -9,18 +9,13 @@
 }
 
 @font-face {
-    font-family: 'Metallica';
-    src: url('Fonts/Metallica.ttf') format('truetype');
-}
-
-@font-face{
-    font-family: 'Pastor-of-Muppets';
-    src: url('Fonts/Pastor\ of\ Muppets.TTF') format('truetype');
+    font-family: 'Cream-Beige';
+    src: url('Fonts/CreamBeige-V4P3y.ttf') format('truetype');
 }
 
 @font-face{
     font-family: 'Soulmate';
-    src: url('Fonts/mSoulmate.ttf') format('truetype');
+    src: url('Fonts/Soulmate.ttf') format('truetype');
 }
 
 * {
@@ -52,7 +47,8 @@ html {
 }
 
 .header h1{
-    font-family: 'Metallica', sans-serif;
+    font-family: 'Cream-Beige', sans-serif;
+    font-size: 75px;
 }
 
 .menu ul {
@@ -70,6 +66,7 @@ html {
 }
 
 .menu a {
+    font-family: 'Cream-Beige', sans-serif;
     color: white;
     text-decoration: none;
     display: block;
