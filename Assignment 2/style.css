@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'Prince-font';
-    src: url('Fonts/myfonts/Prince.ttf') format('truetype');
+    src: url('Fonts/Prince.ttf') format('truetype');
 }
 
 @font-face{
     font-family: 'CNN';
-    src: url('Fonts/myfonts/CNN\ Regular.ttf') format('truetype');
+    src: url('Fonts/CNN\ Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Metallica';
-    src: url('Fonts/myfonts/Metallica.ttf') format('truetype');
+    src: url('Fonts/Metallica.ttf') format('truetype');
 }
 
 @font-face{
     font-family: 'Pastor-of-Muppets';
-    src: url('Fonts/myfonts/Pastor\ of\ Muppets.TTF') format('truetype');
+    src: url('Fonts/Pastor\ of\ Muppets.TTF') format('truetype');
 }
 
 @font-face{
     font-family: 'Soulmate';
-    src: url('Fonts/myfonts/Soulmate.ttf') format('truetype');
+    src: url('Fonts/mSoulmate.ttf') format('truetype');
 }
 
 * {
