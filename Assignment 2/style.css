@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Prince-font';
+    src: url('Fonts/myfonts/Prince.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'CNN';
+    src: url('Fonts/myfonts/CNN\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Metallica';
+    src: url('Fonts/myfonts/Metallica.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Pastor-of-Muppets';
+    src: url('Fonts/myfonts/Pastor\ of\ Muppets.TTF') format('truetype');
+}
+
+@font-face{
+    font-family: 'Soulmate';
+    src: url('Fonts/myfonts/Soulmate.ttf') format('truetype');
+}
 
 * {
     box-sizing: border-box;
@@ -25,6 +49,10 @@ html {
     text-align: center;
     color: #ffffff;
     padding: 15px;
+}
+
+.header h1{
+    font-family: 'Metallica', sans-serif;
 }
 
 .menu ul {
