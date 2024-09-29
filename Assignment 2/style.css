@@ -19,7 +19,10 @@ html {
 }
 
 .header {
-    background-color: #9933cc;
+    background-image: url("Images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
     color: #ffffff;
     padding: 15px;
 }
