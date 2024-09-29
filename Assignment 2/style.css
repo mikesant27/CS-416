@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Prince';
-    src: url('Fonts/Prince.ttf') format('truetype');
-}
-
-@font-face{
-    font-family: 'CNN';
-    src: url('Fonts/CNN\ Regular.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Cream-Beige';
@@ -80,6 +71,12 @@ html {
 img {
     width: 100%;
     height: 100%;
+}
+
+.col-6.col-s-9 h1{
+    font-family: 'Soulmate', sans-serif;
+    color: #33b5e5;
+    font-size: 40px;
 }
 
 .aside {
