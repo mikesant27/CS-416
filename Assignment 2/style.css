@@ -1,12 +1,17 @@
 
 @font-face {
     font-family: 'Cream-Beige';
-    src: url('Fonts/CreamBeige-V4P3y.ttf') format('truetype');
+    src: url('Fonts/CreamBeige.ttf') format('truetype');
 }
 
 @font-face{
     font-family: 'Soulmate';
     src: url('Fonts/Soulmate.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'TCJovialSans';
+    src: url('Fonts/TCJovialSans.otf') format('opentype');
 }
 
 * {
@@ -77,6 +82,11 @@ img {
     font-family: 'Soulmate', sans-serif;
     color: #33b5e5;
     font-size: 40px;
+}
+
+.col-6.col-s-9 p{
+    font-family: 'TCJovialSans', sans-serif;
+    font-size: 25px;
 }
 
 .aside {
