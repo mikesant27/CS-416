@@ -1,5 +1,5 @@
 <?php
-
-function newLine(){
-    print("<br>");
+function newLine()
+{
+    return "<br>";
 }
