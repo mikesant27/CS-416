@@ -8,7 +8,7 @@ $message = "";
 // Check if $conn is defined and available
 if (isset($conn)) {
     // Database name
-    $dbname = "myDBPDO";
+    $dbname = "test";
 
     try {
         // Select the database
