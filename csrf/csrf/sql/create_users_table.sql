@@ -11,5 +11,5 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (id, email, password, username, active) VALUES
-(1, 'alex@codecourse.com', '123', 'alex', 0),
+(1, 'alex@codecourse.com', '123', 'alex', 1),
 (2, 'billy@codecourse.com', '456', 'billy', 1);
