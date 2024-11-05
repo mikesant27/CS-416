@@ -1,0 +1,5 @@
+2. Business Logic Layer (BLL):
+
+This layer contains the application's core functionality and business rules.
+
+Product Controller (ProductController.php):
