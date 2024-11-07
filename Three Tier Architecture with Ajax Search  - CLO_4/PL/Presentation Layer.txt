@@ -1,0 +1,5 @@
+3. Presentation Layer:
+
+This layer handles the user interface and user interactions.
+
+Product List View (productList.php):

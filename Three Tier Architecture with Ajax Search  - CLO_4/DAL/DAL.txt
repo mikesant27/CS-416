@@ -1,0 +1,5 @@
+1. Data Access Layer (DAL):
+
+This layer interacts directly with the database to perform CRUD (Create, Read, Update, Delete) operations.
+
+Database Connection (conn.php):

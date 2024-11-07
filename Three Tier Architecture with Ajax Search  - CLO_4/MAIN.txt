@@ -1,0 +1,5 @@
+To create a data-driven web application with a multi-tier architecture in PHP, we'll structure the application into three layers:
+
+Presentation Layer: Handles user interactions and displays information.
+Business Logic Layer: Processes data and enforces business rules.
+Data Access Layer: Manages database interactions.
